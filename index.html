@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recode planity</title>
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/style-responsive2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script type="text/javascript" src="afficher_cacher_div.js"></script>
+
+</head>
+<body class="body__scroller">
+      <!-- START HEADER -->
+      <header class="header">
+        <div class="header__container flux">
+          <div class="header__container__img"><img src="/assets/img/menu hamburger.png" alt="Menu hamburger" class="header__img"></div>
+          <img src="assets/img/logo.svg" alt="logo Planity" class= "header__logo">
+
+          <nav class="header__nav">
+            <ul class="header__list--link">
+              <li class="header__link">
+                <a class="lien" href="coiffeur.html">Coiffeur</a>
+              </li>
+              <li class="header__link">
+                <a class="lien" href="barbier.html">Barbier</a>
+              </li>
+              <li class="header__link">
+                <a class="lien" href="Manucure.html">Manucure</a>
+              </li>
+              <li class="header__link">
+                <a class="lien" href="Institut-de-beauté.html">Institut de beauté</a>
+              </li>
+              <li class="header__link">
+                <a class="lien" href="Mag.html">Mag</a>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="header__quick-actions">
+            <button class="button button--add" type="button">Ajouter votre établissement</button>
+            <button class="button button--black"  type="button">Se connecter</button>
+          </div>  
+        </div>
+        </header>
+                                    <!--END HEADER-->
+
+                                    <!--START MAIN:HERO-->
+        <main>
+          <div class="main__bg">
+            <section class="hero flux">
+              <h1 class="hero__title">Réservez en beauté</h1>
+              <p class="hero__description">Simple • Immédiat • 24h/24</p>
+              <form class="hero__search" action="" method="get">
+                <div class="container__search">
+                  <label class="hero__label search"><span class="hero__label--span">
+                    Que recherchez-vous?</span>
+                    <input 
+                    class="hero__input" 
+                    type="text" 
+                    name="city" 
+                    value="" 
+                    placeholder="Nom du salon, prestation (coupes...)" 
+                    />
+                  </label>
+                  <div class="hero__label--separator"></div>
+                  <label class="hero__label where">
+                    Où?
+                    <input 
+                    class="hero__input" 
+                    type="text" 
+                    name="city" 
+                    value="" 
+                    placeholder="Adresse, ville..." 
+                    />
+                  </label>
+                  <button class="button button--black--2"type="submit">Rechercher
+                  </button>
+                </div>
+              </form>
+              <div class="container__button--add">
+                <button class="button button__add" type="button">Ajouter votre établissement</button>
+
+              </div>
+                
+          </section>
+        </div>
+          
+          <!---------------------------- Start:home caroussel -->
+          <section>
+            <div class="carousel__content">
+              <div class="carousel__link">
+                <span class="span carousel__span">Découvrez nos professionnels</span>
+                <hr class="hr">
+                <div id="carouselinkAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <h2 class="h2"> <a class="carousel__link--link" href="/">Coiffeur</a></h2>
+                      <p class="link--text1">Envie de changer de tête ou simplement de rafraîchir votre coupe ? Vous avez besoin des
+                  conseils d'un expert pour sublimer votre style.</p>
+                  
+                  <p id="text" class="text">Quels sont les meilleurs salons de coiffure autour de chez vous? Pour répondre à
+                    ces questions, le portail de prises de rendez-vous Planity est votre meilleur allié. Découvrez quel salon est fait
+                    pour vous, les coiffeurs spécialisés, les visagistes aux meilleurs conseils, et prenez rendez-vous sans sortir
+                    de chez vous, quand vous le souhaitez&nbsp;! Vos cheveux méritent le meilleur&nbsp;!</p>
+                    <span class="button" id="button_text" onclick="javascript:afficher_cacher('text');">Voir plus</span>
+                  </div>
+                  
+        
+                    <div class="carousel-item">
+                      <h2 class="h2"> <a class="carousel__link--link" href="/">Barbier</a></h2>
+                      <p class="link--text1">Envie de changer de tête ou simplement de rafraîchir votre coupe ? Vous avez besoin des
+                  conseils d'un expert pour sublimer votre style.</p>
+        
+                  <p id="text2" class="text2">Quels sont les meilleurs salons de coiffure autour de chez vous? Pour répondre à
+                    ces questions, le portail de prises de rendez-vous Planity est votre meilleur allié. Découvrez quel salon est fait
+                    pour vous, les coiffeurs spécialisés, les visagistes aux meilleurs conseils, et prenez rendez-vous sans sortir
+                    de chez vous, quand vous le souhaitez&nbsp;! Vos cheveux méritent le meilleur&nbsp;!</p>
+                    <span class="button" id="button_text2" onclick="javascript:afficher_cacher('text2');">Voir plus</span>
+                    </div>
+                    <div class="carousel-item">
+                      <h2 class="h2"> <a class="carousel__link--link" href="/">Manucure</a></h2>
+                      <p class="link--text1">Envie de changer de tête ou simplement de rafraîchir votre coupe ? Vous avez besoin des
+                  conseils d'un expert pour sublimer votre style.</p>
+        
+                  <p id="text3" class="text3">Quels sont les meilleurs salons de coiffure autour de chez vous? Pour répondre à
+                    ces questions, le portail de prises de rendez-vous Planity est votre meilleur allié. Découvrez quel salon est fait
+                    pour vous, les coiffeurs spécialisés, les visagistes aux meilleurs conseils, et prenez rendez-vous sans sortir
+                    de chez vous, quand vous le souhaitez&nbsp;! Vos cheveux méritent le meilleur&nbsp;!</p>
+                    <span class="button" id="button_text3" onclick="javascript:afficher_cacher('text3');">Voir plus</span>
+                    </div>
+                  </div>
+                </div>
+        
+                
+                
+                
+                
+              </div>
+        
+              <!-- Carousel 1ere partie -->
+        
+              <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/assets/img/Barbe.jpeg" class="d-block w-100" alt="Image de barbe">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/img/Ciseaux.jpeg" class="d-block w-100" alt="Ustensils de coiffures">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/img/Coiffure.webp" class="d-block w-100" alt="Image de coiffure">
+                  </div>
+                </div>
+              </div>
+            
+        
+              <!--  Carousel 2eme partie -->
+              <div id="carousel2Autoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/assets/img/Coiffure.webp" class="d-block w-100" alt="Image de coiffure">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/img/Barbe.jpeg" class="d-block w-100" alt="Image de barbe">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/img/Ciseaux.jpeg" class="d-block w-100" alt="Ustensils de coiffures">
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Carousel 3eme partie -->
+              <div id="carousel3Autoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" >
+                    <img src="/assets/img/Ciseaux.jpeg" class="d-block w-100" alt="Ustensils de coiffures">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/img/Coiffure.webp" class="d-block w-100" alt="Image de coiffure">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/assets/img/Barbe.jpeg" class="d-block w-100" alt="Image de coiffure">
+                  </div>
+                </div>
+            </div>
+          </div>
+          </section>
+        <!---- End Home caroussel -->
+
+        <!------------------------------ Start Hero press -->
+        <section class="hero__section__press">
+          <div class="hero__press">
+            <span class="span">PRESSE</span>
+            <hr class="hr">
+            <h2 class="h2 h2__press">Ils parlent de nous</h2>
+            <div class="press__container">
+              <div class="press__content">VOGUE</div>
+              <div class="press__content">GRAZIA</div>
+              <div class="press__content">ELLE</div>
+              <div class="press__content">marie claire</div>
+            </div>
+          </div>
+        </section>
+            <!-- END Hero press -->
+
+            <!------------------------  start hero promotion -->
+            <section class="hero__promotion flux">
+              <span class="span">UNE FORTE CROISSANCE</span>
+              <hr class="hr">
+              <h2 class="h2 h2__promotion">Vous êtes un professionnel de la beauté? Découvrez la prise de RDV en ligne!</h2>
+              <div class="promotion__container">
+                <div  class="promotion__content  content1">
+                  <div class="content">+50% <p class="promotion__text">de fréquence sur les rdv pris en ligne</p>
+                  <a href="#" class="content__link--button" rel="#" target="_blank"><button class="link--button" type="button" >Ajouter votre établissement</button></a></div>
+                </div>
+                <div class="promotion__content content2">
+                  <div class="content">4x <p class="promotion__text">moins d'oublis avec les rappels sms des rendez-vous</p>
+                  <a href="#" class="content__link--button" rel="#" target="_blank"><button class="link--button" type="button" >Ajouter votre établissement</button></a></div>
+                </div>
+                <div class="promotion__content content3">
+                  <div class="content">50% <p class="promotion__text">des rdv en ligne pris en dehors des horaires d'ouverture</p>
+                    <a href="#" class="content__link--button" rel="#" target="_blank"><button class="link--button" type="button" >Ajouter votre établissement</button></a></div>
+                  </div>
+                  <div class="promotion__content content4">
+                    <div class="content">+40 000 <p class="promotion__text">Salons & institus</p>
+                    <a href="#" class="content__link--button" rel="#" target="_blank"><button class="link--button" type="button" >Ajouter votre établissement</button></a></div>
+                  </div>
+                  <div class="promotion__content content5">
+                    <div class="content">4 RDV <p class="promotion__text">Pris toutes les secondes</p>
+                      <a href="#" class="content__link--button" rel="#" target="_blank"><button class="link--button" type="button" >Ajouter votre établissement</button></a></div>
+                    </div>
+                  <div class="promotion__content content6">
+                    <div class="content">>5 milliards €  <p class="promotion__text"> De rendez-vous vendus</p>
+                    <a href="#" class="content__link--button" rel="#" target="_blank"><button class="link--button" type="button" >Ajouter votre établissement</button></a></div>
+                  </div>
+              </div>
+            </section>
+            <!-- end hero promotion -->
+
+            <!-- start hero recruit -->
+            <section class="hero__recruit">
+              <div class="recruit__container">
+                <img class="recruit__img" src="/assets/img/Equipe-recruit.jpeg" alt="Image de l'équipe Planity">
+                <div class="recruit__content">
+                  <span class="span span__recruit">PROFESSIONNEL</span>
+                  <hr class="hr hr__recruit">
+                  <h2 class="h2 h2__recruit">Planity recherche des profils dans toute la france pour digitaliser le secteur de la beauté</h2>
+                  <p class="recruit__text">Antoine Puymirat - CEO</p>
+                  <a href="#" class="recruit__content__link" rel="#" target="_blank"><button class="button recruit__link--button" type="button" >Découvrir nos offres</button></a></div>
+                </div>
+              </div>
+            </section>
+            <!-- end hero recruit -->
+
+            <!-- start hero city--search  -->
+            <section class="hero__city flux">
+              <div class="city__container">
+                <span class="span city__span">PARTOUT EN FRANCE</span>
+                <hr class="hr city__hr">
+                <h2 class="h2 city__h2">Trouver votre établissement beauté partout en France</h2>
+                <p class="city__text">Coiffeur</p>
+                <h3 class="city__h3">Nos salons de coiffures populaires en France</h3>
+                <table class="table">
+                  <tr>
+                    <td><a href="#">Bordeaux</a></td>
+                    <td><a href="#">Lille</a></td>
+                    <td><a href="#">Lyon</a></td>
+                    <td><a href="#">Marseille</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Montpellier</a></td>
+                    <td><a href="#">Nantes</a></td>
+                    <td><a href="#">Nice</a></td>
+                    <td><a href="#">Paris</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Strasbourg</a></td>
+                    <td><a href="#">Toulouse</a></td>
+                  </tr>
+                </table>
+                <p class="city__text">Barbier</p>
+                <h3 class="city__h3">Nos barbiers populaires en France</h3>
+                <table class="table">
+                  <tr>
+                    <td><a href="#">Bordeaux</a></td>
+                    <td><a href="#">Lille</a></td>
+                    <td><a href="#">Lyon</a></td>
+                    <td><a href="#">Marseille</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Montpellier</a></td>
+                    <td><a href="#">Nantes</a></td>
+                    <td><a href="#">Nice</a></td>
+                    <td><a href="#">Paris</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Strasbourg</a></td>
+                    <td><a href="#">Toulouse</a></td>
+                  </tr>
+                </table>
+                <p class="city__text">Manucure</p>
+                <h3 class="city__h3">Nos salons de manucures populaires en France</h3>
+                <table class="table">
+                  <tr>
+                    <td><a href="#">Bordeaux</a></td>
+                    <td><a href="#">Lille</a></td>
+                    <td><a href="#">Lyon</a></td>
+                    <td><a href="#">Marseille</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Montpellier</a></td>
+                    <td><a href="#">Nantes</a></td>
+                    <td><a href="#">Nice</a></td>
+                    <td><a href="#">Paris</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Strasbourg</a></td>
+                    <td><a href="#">Toulouse</a></td>
+                  </tr>
+                </table>
+                <p class="city__text">Institut</p>
+                <h3 class="city__h3">Nos instituts populaires en France</h3>
+                <table class="table">
+                  <tr>
+                    <td><a href="#">Bordeaux</a></td>
+                    <td><a href="#">Lille</a></td>
+                    <td><a href="#">Lyon</a></td>
+                    <td><a href="#">Marseille</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Montpellier</a></td>
+                    <td><a href="#">Nantes</a></td>
+                    <td><a href="#">Nice</a></td>
+                    <td><a href="#">Paris</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Strasbourg</a></td>
+                    <td><a href="#">Toulouse</a></td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+            <!-- end hero__city--search -->
+
+            <!-- start hero__faq -->
+            <section class="hero__faq flux">
+              <span class="span faq__span">FAQ</span>
+              <hr class="hr">
+              <h2 class="h2 faq__h2">Les questions fréquentes</h2>
+            </section>
+            <!-- end hero__faq -->
+          </main>       
+          <!-- End: HERO -->
+
+          <!-- start footer -->
+        <footer class="footer">
+          <section class="footer__section">
+            <nav class="footer__nav">
+              <div class="footer__container container__logo ">
+                <img class= "footer__logo" src="assets/img/logo.svg" alt="logo Planity" >
+                <div class="container__social--link">
+                <a href="#" ><img class="link__facebook" src="assets/img/images (2).png" alt="logo Facebook"></a>
+                <a href="#" ><img class="link__instagram" src="assets/img/Intagram11.png" alt="logo Instagram">
+                </div>
+              </div>
+              <div class="footer__container">
+                <span class="footer__span">A propos de planity</span>
+                <ul class="footer__list">
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span>Ajouter votre établissement</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span>Rejoignez-nous</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span>CGU</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span>Planity Belgique</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span>Planity België</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span>Planity Deutschland</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span>Politique de confitiendalité</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span>Gestion des cookies</span></a></li>
+                </ul>
+              </div>
+              <div class="footer__container">
+                <span class="footer__span">Trouvez votre prestation</span>
+                <ul class="footer__list">
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span class="footer__list--span">Coiffeur</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span class="footer__list--span">Institut de beauté</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span class="footer__list--span">Barbier</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span class="footer__list--span">Manucure et beauté des pieds</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span class="footer__list--span">Spa</span></a></li>
+                </ul>
+              </div>
+              <div class="footer__container">
+                <span class="footer__span">Recherches fréquentes</span>
+                <ul class="footer__list">
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span>Coiffeur Paris</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span>Coiffeur Bordeaux</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span>Coiffeur Lyon</span></a></li>
+                  <li class="list__content"><a href="#" rel="" target="_blank"><span>Coiffeur Toulouse</span></a></li>
+                </ul>
+              </div>
+            </nav>
+          </section>
+          <hr class="footer__br flux">
+          <section class="footer__copyright flux">
+            <div class="container__social--copyright ">
+              <a href="#" ><img class="link__facebook" src="assets/img/images (2).png" alt="logo Facebook"></a>
+              <a href="#" ><img class="link__instagram" src="assets/img/Intagram11.png" alt="logo Instagram">
+              </div>
+            <span class="span__copyright">Coyright © 2024 Planity</span>
+          </section>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script type="text/javascript"></script>
+      </body>
+</html>
