@@ -1,0 +1,473 @@
+/* 
+Les unités CSS :
+-pixel (px): valeur fixe
+-rem: basée sur la taulle de typo du document
+-em: basée sur la taimme de typo du bloc parent
+-vw / vh: viewport width and height basée sur la taille de la fenêtre
+*/
+:root {
+    --font-1: "Inter, Helvetica, Sans-serif";
+    --font2: "Aeonik, Helvetica, Arial, Sans-serif"
+    --regular: 400;
+    --bold: 700;
+    font-size: 62.5%;/* 16px */
+    --color-1: white;
+    --color-2: black;
+    --color-3: grey;
+    
+}
+.body__scroller {
+    width: auto;
+    height: 5000px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+/*
+FLUX
+*/
+.flux   {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* BUTTON */
+
+.button {
+    position: inherit;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    font-family: var(--font-1);
+    font-size: 1.4rem;
+    font: var(--bold);
+    height: 35px;
+}
+.button:hover {
+background-color: rgba(245, 245, 245, 0.732);
+}
+.button--black--2{
+    font-size: 1.4rem;
+    height: 80%;
+    width: 100%;
+}
+
+.button--black, .button--black--2 {
+    background-color: rgb(46, 46, 46);
+    color:white;
+}
+
+.button--black:hover, .button--black--2:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+/* span */
+.span {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font: var(--bold) var(--font-1);
+    color: var(--color-3);
+}
+
+
+.hr {
+    border-bottom: 10px solid blue;
+}
+
+/* h2 */
+.h2 {
+    font: var(--bold) var(--font-1);
+    letter-spacing: 2px;
+    color: var(--color-1);
+}
+
+
+
+
+
+/* table */
+.table, th, tr, td {
+    text-align: start;
+    border: 1px solid rgb(95, 95, 95);
+    
+}
+
+/*----------------------HEADER-----------------------------------*/
+
+.header{
+    display: inline-block;
+    background-color:transparent;
+    position:fixed;
+    width: 100%;
+    color: var(--color-1);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-around;
+    padding:10px 0;
+    font-size: 1.4rem;
+}
+
+.header__container__img {
+    position: absolute;
+    padding-top: -9999px;
+    left: -9999px;
+}
+
+.header__logo{
+    width: 150px;
+}
+
+/* Nav header */
+.header__list--link{
+    display:flex;
+    column-gap: 20px;
+    height: 100%;
+    align-items: center;
+    
+}
+.header__link{
+    display:flex;
+}
+
+.header__quick-actions {
+    display: flex;
+    column-gap: 20px;
+}
+
+
+
+
+/*------------------------------ HERO ----------------------------*/
+
+/* Background */
+.main__bg {
+    background-image: url(/assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.hero {
+    background-color:transparent;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    row-gap: 10px;
+    color: var(--color-1);
+}
+
+.hero__title {
+    font-weight: 400;
+    font-size: 3rem;
+
+}
+
+.hero__description {
+    font-size: 1.6rem;
+    
+}
+
+.hero__search {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;    
+    padding: 5px 10px 5px 10px;
+    width: 700px;
+    height: auto;
+}
+.container__search {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid: 1fr/ 1fr auto 1fr auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.hero__label {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    font-size: 1.6rem;
+}
+
+.hero__label--separator {
+width: 1px;
+height: 90%;
+background-color: rgb(229, 227, 227);
+}
+
+.hero__input {
+    color: black;
+    font-size: 1.4rem;
+    min-width: 100px;
+    
+}
+
+.hero__input::placeholder {
+    opacity: 1;
+    color: black;
+}
+
+.container__button--add {
+    max-width: 700px;
+    display: none;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%; 
+}
+.button__add {
+    background-color: black;
+    width: 100% ;
+    color: white;
+    font-size: 1.6rem;
+    
+}
+
+/*--------------------------- caroussel------------------------ */
+
+
+.caroussel {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    color: black;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+}
+
+.caroussel__content {
+    width: 500px;
+}
+.caroussel__title {
+    height: 150px;
+    font-size: 5rem;
+    font-family: var(--font-1), var(regular);
+    padding-bottom: 50px;
+}
+.caroussel__link {
+    height: 150px;
+    font-size: 3rem;
+    padding-bottom: 50px;
+}
+
+.link--text1 {
+    height: 80px;
+    font-size: 1.8rem;
+    padding-bottom: 20px; 
+}
+
+.link--text2 {
+    height: 130px;
+    font-size: 1.8rem;
+}
+.container__img {
+    background-color: aqua;
+    height: 100vh;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.img__ciseaux {
+    width: 50%;
+    height: 600px;
+    padding-top: 150px;
+}
+
+/*----------------------------- Hero press ----------------------*/
+.hero__press {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+.press__table{
+    table-layout: fixed;
+    width: 100%;
+    height: 180px;
+    border-collapse: collapse;
+    
+    color: var(--color-1);
+}
+.press__table--tbody td{
+    text-align: center;
+    font-size: 4rem;
+    fon
+}
+
+/* hero promotion */
+
+.hero__promotion {
+    background-color: brown;
+}
+.hero__recruit {
+    background-color: coral;
+}
+.recruit__img {
+    width: 200px;
+}
+.hero__city--search {
+    
+}
+
+/* footer */
+
+.footer {
+    background-color: black;
+}
+
+
+
+@media screen and (max-width: 1070px) {
+    .header {
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: white;
+        height: 60px; 
+    }
+    .header__container { 
+        min-width: 85%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__container__img {
+        position: absolute;
+        top: auto;
+        left: 10px;
+    }
+    .header__img{
+        width: 50%;
+        
+    }
+    .header__logo{
+        filter: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(9%) hue-rotate(332deg) brightness(93%) contrast(100%);
+    }
+    .header__nav {
+        display: none;
+        
+    }
+    .button--add {
+        background-color: rgb(205, 205, 205);
+    }
+    
+    
+    .hero__search {
+        padding: auto;
+        width: 100%;
+        height: auto;
+        min-height: 8%;
+        align-items: flex-end;
+        
+    }
+    .container__search {
+        width: 100%;
+        
+    }
+    .hero__label--separator{
+        display: none;
+    }
+    .search{
+        min-width: 100%;
+        }
+    .hero__input {
+        min-width: 400px;
+    }
+    
+    .where {
+        display: none;
+}
+.button--black--2 {
+    
+    font-size: 0;
+    background-image: url(/assets/img/bouton\ recherche.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position-x: right;
+    
+}
+}
+
+@media screen and (max-width:767px) {
+    .header__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+    }
+    .header__logo {
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: center;
+        
+    }
+    .header__quick-actions {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .button.button--black {
+        height: 50px;
+        font-size: 0;
+        background-image:url(/assets/img/User.png);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-size: 45px;
+        background-position: right;
+        min-width: 50px;
+    }
+    .search {
+        min-width: 250px;
+    }
+    .hero__label--span {
+        display: none;
+    }
+    
+    .button--add {
+        display: none;
+    }
+    .hero {
+        position: relative;
+        top: 100px;
+    }
+    .hero__input {
+        min-width: auto;
+    }
+    .container__button--add {
+        display: contents;
+    }
+    .button__add {
+        height: 50px;
+        border-radius: 10px;
+        font-size: 1.8rem;
+        font-family: var(--font-1);
+    }
+    .button__add:hover {
+        background-color: rgb(42, 42, 42);
+    }
+
+}
+
+
+
+
+@media screen and (max-width:414px) {
+    .main__bg {
+        background-image: url(/assets/img/background__phone2.jpg);
+    }
+    .header__container {
+        grid: repeat(2, 1fr);
+    }
+    .search {
+        min-width: auto;
+    }
+}
